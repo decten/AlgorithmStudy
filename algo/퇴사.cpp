@@ -6,7 +6,7 @@ using namespace std;
 void solve(int n, vector<pair<int, int>> v) {
 	vector<pair<int, int>>::iterator it;
 	it = v.begin();
-	int tmp[16] = { 0, }; //ÀÎµ¦½º´Â ³¯Â¥, °ªÀº ÃÖ´ë°ª ÀúÀå
+	int tmp[16] = { 0, }; //ì¸ë±ìŠ¤ëŠ” ë‚ ì§œ, ê°’ì€ ìµœëŒ€ê°’ ì €ì¥
 	int answer = 0;
 	for (int i = 1; i <= n; i++) {
 		int j = 0;

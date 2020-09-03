@@ -8,21 +8,6 @@ typedef struct node
     struct node* right;
 }Node;
 
-Node* newNode(int data)
-{
-
-    Node* node = (Node*)malloc(sizeof(Node));
-
- 
-    node->data = data;
-
- 
-    node->left = NULL;
-    node->right = NULL;
-    return(node);
-}
-
-
 void search(Node* node)
 {
     if (node == NULL)
@@ -50,7 +35,8 @@ Node* insert(Node* node, int data)
 int main() {
     int n, x;
     scanf("%d", &n);
-    Node* node = newNode(0);
+    Node* node = NULL;
+
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &x);
